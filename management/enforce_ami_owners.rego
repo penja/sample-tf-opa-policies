@@ -12,7 +12,8 @@ import input.tfplan as tfplan
 # or an AWS owner alias (e.g. `amazon`, `aws-marketplace`, `microsoft`)
 allowed_owners = [
   "self",
-  "012345678901"
+  "012345678901",
+  "099720109477"
 ]
 
 
