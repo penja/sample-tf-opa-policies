@@ -14,7 +14,7 @@ import input.tfplan as tfplan
 # A whitelist of AMI ids
 allowed_amis = [
   "ami-07d0cf3af28718ef8",
-  "ami-0a9b2a20d7dc001e0"
+  "ami-0a9b2a20d7dc001e0",
   "ami-000b3a073fc20e415"
 ]
 
