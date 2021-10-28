@@ -8,8 +8,6 @@ policy "workspace_destroy" {
 
 
 
-
-
 policy "instance_types" {
   enabled           = true
   enforcement_level = "hard-mandatory"
