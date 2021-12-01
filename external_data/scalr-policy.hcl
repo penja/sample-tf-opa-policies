@@ -3,5 +3,5 @@ version = "v1"
 
 policy "random_decision" {
   enabled           = true
-  enforcement_level = "soft-failed"
+  enforcement_level = "soft-mandatory"
 }
