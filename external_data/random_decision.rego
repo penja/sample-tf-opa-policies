@@ -13,7 +13,7 @@ random_number = num {
     }
     response := http.send(request)
     response.status_code == 200
-    num := to_number(trim(response.raw_body, "\n"))
+    num := trim(response.raw_body, "\n")
 }
 
 deny[reason] {
