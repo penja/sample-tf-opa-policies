@@ -11,8 +11,7 @@ random_number = num {
         "url": "https://www.random.org/integers/?num=1&min=0&max=1000&base=10&col=1&format=plain",
         "method": "GET"
     }
-    response := http.send(request)
-    num := response
+    num := http.send(request)
 }
 
 deny[reason] {
