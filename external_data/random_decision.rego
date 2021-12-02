@@ -14,6 +14,7 @@ random_number = num {
     num := http.send(request)
 }
 
+
 deny[reason] {
     number := random_number
     number != "penja"
