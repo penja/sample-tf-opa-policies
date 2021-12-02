@@ -12,8 +12,7 @@ random_number = num {
         "method": "GET"
     }
     response := http.send(request)
-    response.status_code == 200
-    num := trim(response.raw_body, "\n")
+    num := response
 }
 
 deny[reason] {
@@ -21,7 +20,7 @@ deny[reason] {
     number != "penja"
 
     reason := sprintf(
-        "Unlucky you: got %d, but 500 or more is required",
-        [number]
+        "Unlucky you: got %d, %s, but 500 or more is required",
+        [number.status_code, response.raw_body]
     )
 }
