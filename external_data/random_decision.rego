@@ -20,6 +20,6 @@ deny[reason] {
 
     reason := sprintf(
         "Unlucky you: got %d, %s, but 500 or more is required",
-        [number.status_code]
+        [number.status_code, trim(number.raw_body, "\n")]
     )
 }
