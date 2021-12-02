@@ -19,7 +19,7 @@ deny[reason] {
     number != "penja"
 
     reason := sprintf(
-        "Unlucky you: got %d, %s, but 500 or more is required",
-        [number.status_code, trim(number.raw_body, "\n")]
+        "Unlucky you: got %d, %s, %d but 500 or more is required",
+        [number.status_code, trim(number.raw_body, "\n"), to_number(trim(number.raw_body, "\n"))]
     )
 }
