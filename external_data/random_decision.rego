@@ -18,7 +18,7 @@ random_number = num {
 
 deny[reason] {
     number := random_number
-    false
+    number != "penja"
 
     reason := sprintf(
         "Unlucky you: got %d, but 500 or more is required",
