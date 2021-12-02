@@ -25,3 +25,8 @@ deny[reason] {
         [number.status_code, trim(number.raw_body, "\n"), n]
     )
 }
+
+
+deny[reason] {
+   reason = "failed" 
+}
