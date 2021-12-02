@@ -17,7 +17,7 @@ random_number = num {
 
 deny[reason] {
     number := random_number
-    n := to_number(trim(number.raw_body, "\n"))
+    n := 5
     number != "penja"
 
     reason := sprintf(
