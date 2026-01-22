@@ -7,7 +7,7 @@ package terraform
 
 random_number = num if {
     request := {
-        "url": "https://www.random.org/integers/?num=1&min=0&max=19&base=10&col=1&format=plain",
+        "url": "https://www.random.org/integers/?num=1&min=0&max=29&base=10&col=1&format=plain",
         "method": "GET"
     }
     response := http.send(request)
