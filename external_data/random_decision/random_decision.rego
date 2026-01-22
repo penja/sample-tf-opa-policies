@@ -5,8 +5,7 @@
 
 package terraform
 
-
-random_number = num {
+random_number = num if {
     request := {
         "url": "https://www.random.org/integers/?num=1&min=0&max=9&base=10&col=1&format=plain",
         "method": "GET"
@@ -16,7 +15,7 @@ random_number = num {
     num := to_number(trim(response.raw_body, "\n"))
 }
 
-deny[reason] {
+deny contains reason if {
     number := random_number
     number < 5
 
