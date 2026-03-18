@@ -1,7 +1,7 @@
 version = "v1"
 
 policy "oom_repro_1" {
-    enabled = true
+    enabled = false
 }
 
 policy "oom_repro_2" {
