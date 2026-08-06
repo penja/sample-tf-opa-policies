@@ -2,8 +2,6 @@
 
 package terraform
 
-import rego.v1
-
 import input.tfrun as tfrun
 
 
