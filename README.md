@@ -23,6 +23,16 @@ Each sample policy comprises 3 files.
 
 Each folder also includes an example `scalr-policy.hcl` file. These files are used by Scalr to implement enforcement levels for each policy (`hard-mandatory`, `soft-mandatory`, `advisory`). See [Enabling and Enforcing Policy](https://docs.scalr.com/en/latest/opa.html#enabling-and-enforcing-policy) for more details.
 
+## all-policies
+
+The [`all-policies/`](all-policies) directory contains every policy in this repository in a single
+flat directory, rewritten for **Rego v1** (OPA 1.0+), with one `scalr-policy.hcl` that declares all
+of them with a mix of `hard-mandatory`, `soft-mandatory` and `advisory` enforcement levels. Point a
+Scalr policy group at that directory to attach the whole catalogue at once instead of one directory
+per policy. It carries no `*_test.rego` / `*_mock.json` files — those stay in the per-policy
+directories, where CI runs them. See [`all-policies/README.md`](all-policies/README.md) for the
+details and caveats.
+
 ## Policy Evaluation
 
 You can evaluate a policy against your own terraform plans using the Terraform CLI and `opa eval` as follows.
