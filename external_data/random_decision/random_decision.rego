@@ -3,7 +3,6 @@
 # to fetch external data during policy evaluation.
 # See <https://www.openpolicyagent.org/docs/latest/policy-reference/#http>
 
-
 package terraform
 
 random_number = num if {
