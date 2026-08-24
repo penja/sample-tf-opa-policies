@@ -192,3 +192,8 @@ policy "random_decision" {
   enabled           = false
   enforcement_level = "advisory"
 }
+
+policy "workspace_name_suffix" {
+  enabled           = true
+  enforcement_level = "advisory"
+}
