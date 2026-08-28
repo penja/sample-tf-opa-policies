@@ -16,3 +16,5 @@ deny contains reason if {
 		[tfrun.workspace.name, data.naming.required_suffix],
 	)
 }
+
+# SCALRCORE-39838 e2e: open-PR contribute marker
