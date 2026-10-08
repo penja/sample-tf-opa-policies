@@ -12,3 +12,5 @@ deny[reason] {
 
 	reason := sprintf("%-40s :: ALB listeners must use HTTPS", [r.address])
 }
+
+# SCALRCORE-40586 testenv revision 2
